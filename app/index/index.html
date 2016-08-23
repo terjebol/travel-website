@@ -1,0 +1,104 @@
+﻿<body>
+<a name="top"></a>
+<nav-menu></nav-menu>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12" style="padding:0">
+            <img src="/resources/images/background.png" class="img-responsive img-background"/>
+            <!--<img src="/resources/images/logo_hvit_bakgrunn.png" class="img-thumbnail overlay-logo"/>-->
+            <span class="overlay-quote">Selv en reise på tusen mil starter med ett skritt.</span>
+
+        </div>
+    </div>
+    <a name="content"></a>
+    <hr class="splitter">
+    <router-outlet></router-outlet>
+
+    <hr class="splitter">
+
+    <a name="contact"></a>
+    <footer>
+    <div class="row footer">
+        <div class="col-xs-12 col-md-3 col-lg3">
+            <address>
+                <h1 class="title bigtitle">Oppdag Málaga AS.</h1>
+                <ul class="contactlist">
+                    <li>
+                        <div>
+                            <i class="glyphicon glyphicon-earphone green-glyph"></i>
+                            <strong>Telefon</strong> <br>
+                            <a href="tel:+4793614842">(0047)93614842</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="glyphicon glyphicon-envelope green-glyph"></i>
+                            <strong>Epost</strong> <br>
+                            <a href="mailto:kontakt@oppdagmalaga.no">Ta kontakt</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="glyphicon glyphicon-home green-glyph"></i>
+                            <strong>Adresse</strong> <br>
+                            <span>7035 Trondheim, Norge</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </address>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg3">
+            <h1 class="title bigtitle">Følg oss</h1>
+            <div class="twitter-hover social-slide"></div>
+            <a href="https://www.facebook.com/oppdagmalaga" target="_blank">
+                <div class="facebook-hover social-slide"></div>
+            </a>
+            <a href="https://www.instagram.com/oppdagmalaga/" target="_blank">
+            <div class="instagram-hover social-slide"></div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg3">
+            <h1 class="title bigtitle">Om oss</h1>
+            <span>
+                Vi jobber med tematurer og events i Málaga og Andalusia i sørlige Spania.
+                Gruppereiser og skreddersydde firmaturer er noe av det vi tilbyr. Denne regionen
+                av Spania kan tilby det meste, og vi er her for å gjøre opplevelsen fantastisk for dere som
+                reisende.
+            </span>
+        </div>
+        <div class="col-xs-12 col-md-3 col-lg3">
+            <h1 class="title bigtitle">Nyttig</h1>
+            <ul class="contactlist">
+                <li>
+                    <div>
+                        <i class="glyphicon glyphicon-info-sign green-glyph"></i>
+                        <a class="line-height-forty" [routerLink]="['Terms']" fragment="top">Informasjon og vilkår</a>
+                    </div>
+                </li>
+                <!--<li>-->
+                    <!--<div>-->
+                        <!--<i class="glyphicon glyphicon-eye-open green-glyph"></i>-->
+                        <!--<a class="line-height-forty" [routerLink]="['Privacy']">Personvern</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+                <li>
+                    <div>
+                        <i class="glyphicon glyphicon-question-sign green-glyph"></i>
+                        <a class="line-height-forty" href="#">Vanlige spørsmål</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="text-center">
+                <i class="glyphicon glyphicon-copyright-mark line-height-forty"></i>
+                Copyright {{year}} Oppdag Málaga AS
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>
+
+
+</body>

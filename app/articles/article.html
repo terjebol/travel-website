@@ -1,0 +1,21 @@
+<article>
+<div class="row well" *ngIf="article">
+    <div class="col-xs-12 col-lg-12 col-md-12">
+        <header>
+        <h3 class="title bigtitle text-center">{{article.title}}</h3>
+        </header>
+    <div class="col-xs-12 col-lg-6 col-md-6">
+
+        <div>
+            <img class="img-rounded img-responsive" src="{{article.thumbnail}}" alt="{{article.title}}">
+            <!--<div class="caption">-->
+            <!--<p>{{article.content}}</p>-->
+            <!--<p><a href="#articles" class="btn btn-success" role="button" (click)="onClick(article)">Les mer</a></p>-->
+        </div>
+    </div>
+    <div class="col-xs-12 col-lg-6 col-md-6">
+        <p [innerHTML]="article.content | safe"></p>
+        </div>
+</div>
+</div>
+</article>

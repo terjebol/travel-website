@@ -1,0 +1,16 @@
+[
+  {
+    "id": "tapas",
+    "title": "Tapas",
+    "file": "tapas.html",
+    "thumbnail": "resources/images/tapas.jpg",
+    "content": ""
+  },
+  {
+    "id": "wine",
+    "title": "Vin",
+    "file": "wine.html",
+    "thumbnail": "resources/images/wine.jpg",
+    "content": ""
+  }
+]

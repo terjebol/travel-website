@@ -1,0 +1,19 @@
+<article>
+    <div class="row travel" *ngIf="travel">
+        <div class="col-xs-12 col-lg-12 col-md-12">
+            <header>
+                <h3 class="title bigtitle text-center">{{travel.title}}</h3>
+            </header>
+            <!--<div class="col-xs-12 col-lg-6 col-md-6">-->
+
+                <!--<div>-->
+                    <!--<img class="img-rounded img-responsive" src="{{travel.thumbnail}}" alt="{{travel.title}}">-->
+
+                <!--</div>-->
+            <!--</div>-->
+            <div class="col-xs-12 col-lg-12 col-md-12 center-block">
+                <div [innerHTML]="travel.content | safe"></div>
+            </div>
+        </div>
+    </div>
+</article>

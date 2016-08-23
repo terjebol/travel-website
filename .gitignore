@@ -1,0 +1,8 @@
+.idea
+node_modules
+target
+*.js
+*.js.map
+typings
+*.iml
+.typingsrc

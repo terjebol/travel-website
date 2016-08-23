@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mat-og-vin",
+    "title": "Mat og Vin",
+    "summaryfile": "matogvin_summary.html",
+    "file": "matogvin.html",
+    "thumbnail": "resources/images/wine.jpg"
+  },
+  {
+    "id": "adrenaline",
+    "title": "Adrenaline kick",
+    "summaryfile": "adrenaline_summary.html",
+    "file": "adrenaline.html",
+    "thumbnail": "resources/images/adventure.jpg"
+  }
+]

@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-xs-12 col-lg-4 col-md-6" *ngFor="let article of articles">
+        <section>
+            <header>
+                <h3 class="title">{{article.title}}</h3>
+            </header>
+            <article>
+                <div class="thumbnail">
+                    <img class="img-rounded" src="{{article.thumbnail}}" alt="{{article.title}}">
+                    <div class="caption">
+                        <p class="article-tease text-muted" [innerHTML]="article.content | safe"></p>
+                        <p>
+                            <button class="btn btn-success" role="button" (click)="onClick(article)">Les mer</button>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</div>
