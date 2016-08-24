@@ -1,5 +1,5 @@
 import {ROUTER_DIRECTIVES} from "@angular/router";
-import {Component, ComponentMetadataType OnInit} from "@angular/core";
+import {Component, ComponentMetadataType, OnInit} from "@angular/core";
 import {MenuComponent} from "../menu/menu";
 
 @Component(<ComponentMetadataType>{

@@ -1,6 +1,5 @@
 import { NgModule, NgModuleMetadataType }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { AUTH_PROVIDERS } from 'angular2-jwt';
