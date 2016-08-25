@@ -122,17 +122,11 @@ body {
 .google-hover {
     background-image: url('/resources/images/social/google-hover.png');
 }
-.pinterest-hover {
-    background-image: url('/resources/images/social/pinterest-hover.png');
-}
 .linkedin-hover {
     background-image: url('/resources/images/social/linkedin-hover.png');
 }
 .tumblr-hover {
     background-image: url('/resources/images/social/tumblr-hover.png');
-}
-.reddit-hover {
-    background-image: url('/resources/images/social/reddit-hover.png');
 }
 .instagram-hover {
     background-image: url('/resources/images/social/instagram-hover.png');
@@ -201,5 +195,10 @@ ul.checklist {
 hr.narrow {
     max-width: 50px;
     border-top: 1px solid #b0b0b0;
+}
+
+.alert-success {
+    background-color: #4CAE4C !important;
+    color: #FFF !important;
 }
 

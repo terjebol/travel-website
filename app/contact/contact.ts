@@ -11,9 +11,11 @@ import {FORM_DIRECTIVES} from "@angular/forms";
 })
 export class ContactComponent {
     contactRequest = new Contact("din@epost.no","Din beskjed");
+    submitted: boolean;
 
     onSubmit() {
         console.log("Submitted");
+        this.submitted = true;
     }
 
 }
