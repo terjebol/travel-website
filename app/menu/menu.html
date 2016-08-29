@@ -20,7 +20,13 @@
                 <li><a routerLink="/Articles" routerLinkActive="active">Artikler</a></li>
                 <li><a routerLink="/About" routerLinkActive="active">Om oss</a></li>
                 <li><a routerLink="/Partners" routerLinkActive="active">Partnere</a></li>
-                <li><a routerLink="/Members" routerLinkActive="active">Min side</a></li>
+                <li><a routerLink="/Contact" routerLinkActive="active">Kontakt oss</a></li>
+                <li *ngIf="!auth.authenticated()">
+                    <a (click)="auth.login()">Logg inn</a>
+                </li>
+                <li *ngIf="auth.authenticated()">
+                    <a routerLink="/Members" routerLinkActive="active">Min side</a>
+                </li>
                 <!--<li *ngFor="#navElement of navElements; #i = index" [ngClass]="{active: selectedIndex==i}">-->
                     <!--<a href="{{navElement.anchor}}" (click)="menuElementClick(i)">{{navElement.title}}</a>-->
                 <!--</li>-->

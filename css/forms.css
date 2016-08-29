@@ -5,3 +5,13 @@
 .ng-invalid {
     border-left: 5px solid #a94442; /* red */
 }
+
+.ng-pristine.ng-untouched {
+    font-style: italic;
+    color: #bdbdbd;
+}
+
+.ng-pristine.ng-untouched:focus {
+    font-style: normal;
+    color: inherit;
+}
