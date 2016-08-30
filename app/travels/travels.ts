@@ -1,11 +1,11 @@
-import {Component} from "@angular/core";
+import {Component, ComponentMetadataType} from "@angular/core";
 
 import {Router} from "@angular/router";
 import {TravelRepository} from "./TravelRepository";
 import {Travel} from "./TravelRepository";
 import {SanitationPipe} from "../SanitationPipe";
 
-@Component({
+@Component(<ComponentMetadataType>{
     selector: 'travels',
     templateUrl: 'app/travels/travels.html',
     providers: [TravelRepository],
@@ -24,6 +24,10 @@ export class TravelListComponent {
     onClick(travel:Travel) {
         this.router.navigate(["/Travels",travel.id]);
 
+    }
+
+    goGroups() {
+        this.router.navigate(["/Travels/Groups"]);
     }
 }
 

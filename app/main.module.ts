@@ -16,12 +16,14 @@ import {AboutUsComponent} from "./aboutus/aboutus";
 import {MembersComponent} from "./members/members";
 import {ContactComponent} from "./contact/contact";
 import {TermsComponent} from "./terms/terms";
+import {GroupTravelComponent} from "./travels/groups.component";
 
 const routes:Routes = <Routes>[
     {path: '', component: FrontPageComponent},
     {path: 'Articles', component: ArticleListComponent},
     {path: 'Articles/:id', component: ArticleDetails},
     {path: 'Travels', component: TravelListComponent},
+    {path: 'Travels/Groups', component: GroupTravelComponent},
     {path: 'Travels/:id', component: TravelDetails},
     {path: 'Partners', component: PartnersComponent},
     {path: 'Terms', component: TermsComponent},
@@ -40,6 +42,7 @@ export const routing = RouterModule.forRoot(routes);
         FrontPageComponent,
         ArticleListComponent,
         ArticleDetails,
+        GroupTravelComponent,
         TravelListComponent,
         TravelDetails,
         PartnersComponent,
