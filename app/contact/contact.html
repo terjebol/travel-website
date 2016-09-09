@@ -10,7 +10,7 @@
                         <label for="sender">Din epost</label>
                         <input type="text" #email="ngModel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
                                class="form-control" [(ngModel)]="contactRequest.sender" name="sender" id="sender"
-                               required/>
+                               placeholder="Din epost" required/>
                         <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
                             Epost er påkrevd
                         </div>
@@ -19,7 +19,7 @@
                         <label for="message">Beskjed</label>
                         <textarea rows="8" cols="40" #msg="ngModel" class="form-control"
                                   [(ngModel)]="contactRequest.message"
-                                  name="message" id="message" required>
+                                  name="message" id="message" placeholder="Din beskjed" required>
                                     {{contactRequest.message}}
                         </textarea>
                         <div [hidden]="msg.valid || msg.pristine" class="alert alert-danger">
