@@ -1,15 +1,12 @@
 import {Component, ComponentMetadataType} from "@angular/core";
-
 import {Router} from "@angular/router";
 import {TravelRepository} from "./TravelRepository";
 import {Travel} from "./TravelRepository";
-import {SanitationPipe} from "../SanitationPipe";
 
 @Component(<ComponentMetadataType>{
     selector: 'travels',
     templateUrl: 'app/travels/travels.html',
     providers: [TravelRepository],
-    pipes: [SanitationPipe]
 })
 export class TravelListComponent {
     travels:Travel[];

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { AUTH_PROVIDERS } from 'angular2-jwt';
-import {provideRouter, Routes, RouterModule} from '@angular/router';
+import { Routes, RouterModule} from '@angular/router';
 
 import { IndexComponent }  from './index/index';
 import {FrontPageComponent} from "./frontpage/FrontPage";
@@ -17,6 +17,8 @@ import {MembersComponent} from "./members/members";
 import {ContactComponent} from "./contact/contact";
 import {TermsComponent} from "./terms/terms";
 import {GroupTravelComponent} from "./travels/groups.component";
+import {SanitationPipe} from "./SanitationPipe";
+import {MenuComponent} from "./menu/menu";
 
 const routes:Routes = <Routes>[
     {path: '', component: FrontPageComponent},
@@ -32,11 +34,10 @@ const routes:Routes = <Routes>[
     {path: 'Contact', component: ContactComponent}
 ];
 
-export const APP_ROUTER_PROVIDERS = [provideRouter(routes)];
 export const routing = RouterModule.forRoot(routes);
 
 @NgModule(<NgModuleMetadataType>{
-    imports: [BrowserModule, RouterModule, FormsModule, HttpModule],
+    imports: [BrowserModule, RouterModule, FormsModule, HttpModule, routing],
     declarations: [
         IndexComponent,
         FrontPageComponent,
@@ -49,10 +50,12 @@ export const routing = RouterModule.forRoot(routes);
         AboutUsComponent,
         MembersComponent,
         ContactComponent,
-        TermsComponent
+        TermsComponent,
+        SanitationPipe,
+        MenuComponent
     ],
     bootstrap: [IndexComponent],
-    providers: [APP_ROUTER_PROVIDERS, AUTH_PROVIDERS]
+    providers: [AUTH_PROVIDERS]
 })
 
 

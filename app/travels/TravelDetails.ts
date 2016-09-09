@@ -2,14 +2,11 @@ import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
 import {TravelRepository} from "./TravelRepository";
 import {Travel} from "./TravelRepository";
-import {SanitationPipe} from "../SanitationPipe";
-
 
 @Component({
     selector: 'travel',
     templateUrl: 'app/travels/travel.html',
     providers: [TravelRepository],
-    pipes: [SanitationPipe]
 })
 
 export class TravelDetails implements OnInit{

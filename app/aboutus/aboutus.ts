@@ -5,8 +5,4 @@ import {Component} from "@angular/core";
     templateUrl: 'app/aboutus/about.html',
 })
 export class AboutUsComponent {
-
-    public lala() {
-        console.log("lala");
-    }
 }

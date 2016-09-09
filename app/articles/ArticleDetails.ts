@@ -2,16 +2,14 @@ import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
 import {ArticleRepository} from "./ArticleRepository";
 import {Article} from "./ArticleRepository";
-import {SanitationPipe} from "../SanitationPipe";
 
 @Component({
     selector: 'article-details',
     templateUrl: 'app/articles/article.html',
     providers: [ArticleRepository],
-    pipes: [SanitationPipe]
 })
 
-export class ArticleDetails
+export class ArticleDetails implements OnInit
 {
     article:Article;
     constructor(private route:ActivatedRoute,

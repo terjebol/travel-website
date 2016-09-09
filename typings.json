@@ -5,7 +5,6 @@
     "node": "registry:dt/node",
     "bootstrap": "registry:dt/bootstrap",
     "jquery": "registry:dt/jquery",
-    "whatwg-fetch": "registry:dt/whatwg-fetch",
     "jquery-ui": "github:DefinitelyTyped/DefinitelyTyped/jqueryui/jqueryui.d.ts#d141c6eb240758ee0ba99c3d416719d2090ee8f1"
   }
 }
