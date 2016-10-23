@@ -1,4 +1,4 @@
-import { NgModule, NgModuleMetadataType }      from '@angular/core';
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 import { HttpModule } from "@angular/http";
@@ -36,7 +36,7 @@ const routes:Routes = <Routes>[
 
 export const routing = RouterModule.forRoot(routes);
 
-@NgModule(<NgModuleMetadataType>{
+@NgModule({
     imports: [BrowserModule, RouterModule, FormsModule, HttpModule, routing],
     declarations: [
         IndexComponent,

@@ -1,6 +1,6 @@
-import {Component, ComponentMetadataType, OnInit} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 
-@Component(<ComponentMetadataType>{
+@Component({
     selector: 'oppdag-malaga',
     templateUrl: 'app/index/index.html',
 })

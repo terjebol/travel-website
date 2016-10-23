@@ -1,9 +1,9 @@
-import {Component, ComponentMetadataType} from "@angular/core";
+import {Component} from "@angular/core";
 import {Router} from "@angular/router";
 import {TravelRepository} from "./TravelRepository";
 import {Travel} from "./TravelRepository";
 
-@Component(<ComponentMetadataType>{
+@Component({
     selector: 'travels',
     templateUrl: 'app/travels/travels.html',
     providers: [TravelRepository],
