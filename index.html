@@ -8,88 +8,18 @@
     <title>Oppdag Málaga</title>
     <base href="/">
 
-
-    <!-- 1. Load libraries -->
     <script src="http://cdn.auth0.com/js/lock/10.0.0/lock.min.js"></script>
-    <script src="/node_modules/core-js/client/shim.js"></script>
-    <script src="/node_modules/zone.js/dist/zone.js"></script>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <!--<script src="/resources/jquery-ui.min.js"></script>-->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/node_modules/systemjs/dist/system.src.js"></script>
-    <!--<script src="/node_modules/angular2-jwt/angular2-jwt.js"></script>-->
-
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').then(null, console.error.bind(console));
-    </script>
-
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/oppdagmalaga.css" type="text/css" />
     <link rel="stylesheet" href="/css/forms.css" type="text/css" />
 
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <!--<meta charset="utf-8">-->
-    <!--&lt;!&ndash;<title>Your Name Here - Welcome</title>&ndash;&gt;-->
-
-    <!--<meta name="description" content="">-->
-
-    <!--<base href="/">-->
-
-
-    <!--<link href="http://fonts.googleapis.com/css?family=Allura" rel="stylesheet" type="text/css">-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet" type="text/css">-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">-->
-    <!--&lt;!&ndash;<link href="http://fonts.googleapis.com/css?family=Palatino+Linotype" rel="stylesheet" type="text/css">&ndash;&gt;-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet" type="text/css">-->
-
-
-    <!--<link rel="stylesheet" href="/css/oppdagmalaga.css" type="text/css" />-->
-    <!--<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"/>-->
-    <!--<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">-->
-
-    <!--&lt;!&ndash; 1. Load libraries &ndash;&gt;-->
-    <!--&lt;!&ndash; IE required polyfills, in this exact order &ndash;&gt;-->
-    <!--<script src="/node_modules/es6-shim/es6-shim.min.js"></script>-->
-    <!--<script src="/node_modules/systemjs/dist/system-polyfills.js"></script>-->
-    <!--<script src="/node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>-->
-
-    <!--<script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>-->
-    <!--<script src="/node_modules/systemjs/dist/system.src.js"></script>-->
-    <!--<script src="/node_modules/rxjs/bundles/Rx.js"></script>-->
-    <!--<script src="/node_modules/angular2/bundles/angular2.dev.js"></script>-->
-    <!--<script src="/node_modules/jquery/dist/jquery.min.js"></script>-->
-    <!--<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
-    <!--<script src="/node_modules/angular2/bundles/router.dev.js"></script>-->
-    <!--<script src="/node_modules/angular2/bundles/http.dev.js"></script>-->
-    <!--&lt;!&ndash; 2. Configure SystemJS &ndash;&gt;-->
-    <!--<script>-->
-<!--//      System.config({-->
-<!--//        transpiler: 'typescript',-->
-<!--//        typescriptOptions: {emitDecoratorMetadata: true},-->
-<!--//        packages: {app: {defaultExtension: 'ts'}}-->
-<!--//      });-->
-      <!--System.config({-->
-        <!--baseURL: '/',-->
-        <!--defaultExtension: 'js',-->
-        <!--packages: {-->
-          <!--app: {-->
-            <!--format: 'register',-->
-            <!--defaultExtension: 'js'-->
-          <!--}-->
-        <!--}-->
-      <!--});-->
-      <!--System.import('app/main')-->
-            <!--.then(null, console.error.bind(console));-->
-    <!--</script>-->
-
   </head>
 
-  <!-- 3. Display the application -->
-  <!--<body>-->
+  <body>
     <oppdag-malaga>Loading...</oppdag-malaga>
-  <!--</body>-->
+    <script src="dist/vendor.bundle.js"></script>
+    <script src="dist/app.bundle.js"></script>
+  </body>
+
+
 </html>

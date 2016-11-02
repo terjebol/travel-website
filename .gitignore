@@ -6,3 +6,4 @@ app/*.js.map
 typings
 *.iml
 .typingsrc
+dist
