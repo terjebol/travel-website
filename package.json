@@ -2,17 +2,15 @@
   "name": "oppdag-malaga",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "express:reload": "nodemon target/main.js",
-    "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
-    "build": "webpack",
+    "build": "rimraf dist && webpack --config ./webpack.config.js --progress --profile --bail",
     "package": "webpack -p",
     "watch": "webpack --watch",
-    "dev": "concurrently \"lite-server\" \"npm run watch\""
+    "dev": "webpack-dev-server --inline --progress --port 3000"
+
   },
   "license": "ISC",
   "dependencies": {
@@ -33,12 +31,16 @@
     "express": "^4.14.0",
     "jquery": "^2.2.4",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.0-beta.12",
+    "rxjs": "^5.0.0-rc.1",
     "systemjs": "^0.19.27",
     "zone.js": "0.6.25"
   },
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
     "concurrently": "^3.1.0",
+    "html-webpack-plugin": "^2.24.1",
     "lite-server": "^2.2.2",
     "nodemon": "^1.11.0",
     "ts-loader": "^0.9.5",

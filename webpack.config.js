@@ -5,7 +5,7 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
 module.exports = {
     entry: {
         "vendor": "./app/vendor",
-        "app": "./app/main"
+        "app": "./app/main.ts"
     },
     output: {
         path: __dirname,
@@ -31,7 +31,10 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"./dist/vendor.bundle.js"),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: ['app','vendor']
+        }),
+
         new LiveReloadPlugin({
             appendScriptTag: true
         })

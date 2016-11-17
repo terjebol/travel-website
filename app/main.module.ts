@@ -19,6 +19,7 @@ import {TermsComponent} from "./terms/terms";
 import {GroupTravelComponent} from "./travels/groups.component";
 import {SanitationPipe} from "./SanitationPipe";
 import {MenuComponent} from "./menu/menu";
+import {AndaluciaComponent} from "./andalucia/andalucia";
 
 const routes:Routes = <Routes>[
     {path: '', component: FrontPageComponent},
@@ -31,7 +32,9 @@ const routes:Routes = <Routes>[
     {path: 'Terms', component: TermsComponent},
     {path: 'About', component: AboutUsComponent},
     {path: 'Members', component: MembersComponent},
-    {path: 'Contact', component: ContactComponent}
+    {path: 'Contact', component: ContactComponent},
+    {path: 'Andalucia', component: AndaluciaComponent}
+
 ];
 
 export const routing = RouterModule.forRoot(routes);
@@ -52,7 +55,8 @@ export const routing = RouterModule.forRoot(routes);
         ContactComponent,
         TermsComponent,
         SanitationPipe,
-        MenuComponent
+        MenuComponent,
+        AndaluciaComponent
     ],
     bootstrap: [IndexComponent],
     providers: [AUTH_PROVIDERS]
