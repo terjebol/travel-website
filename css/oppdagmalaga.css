@@ -7,6 +7,11 @@ body {
     background: -moz-linear-gradient(#c0c0c0, #FFFFFF, #c0c0c0); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#c0c0c0, #FFFFFF, #c0c0c0); /* Standard syntax */
 }
+
+h2,h3,h4,h5 h6 {
+    color: #204020;
+    font-family: "Trebuchet MS","Helvetica Neue";
+}
 .overlay-logo {
     position:absolute;
     z-index: 2;
@@ -53,7 +58,7 @@ hr.splitter {
 }
 
 .title {
-    /*font-family: "Poor Richard";*/
+    color: #204020 !important;
 }
 
 .bigtitle {
@@ -63,6 +68,11 @@ hr.splitter {
 
 .welcome {
     font-size: 1.2em;
+}
+
+.welcome p strong {
+    font-size: 1.3em;
+    color: #204020;
 }
 
 body {
