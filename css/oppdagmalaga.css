@@ -8,6 +8,9 @@ body {
     background: linear-gradient(#c0c0c0, #FFFFFF, #c0c0c0); /* Standard syntax */
 }
 
+h1 {
+    font-family: "Trebuchet MS","Helvetica Neue";
+}
 h2,h3,h4,h5 h6 {
     color: #204020;
     font-family: "Trebuchet MS","Helvetica Neue";
@@ -35,7 +38,6 @@ p.article-tease {
 
 .thumbnail img {
     max-width: 512px;
-
 }
 
 .overlay-quote {
@@ -49,8 +51,6 @@ p.article-tease {
     font-family: "Poor Richard";
     color: #000000;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-
-
 }
 
 hr.splitter {
@@ -66,13 +66,22 @@ hr.splitter {
     font-weight: bold;
 }
 
-.welcome {
+.important-text {
     font-size: 1.2em;
+    padding: 24px;
 }
 
-.welcome p strong {
+.important-text p strong {
     font-size: 1.3em;
     color: #204020;
+}
+
+.content-text {
+    font-size: 1.1em;
+}
+
+.menu-text {
+    font-size: 1.2em;
 }
 
 body {

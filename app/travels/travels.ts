@@ -26,5 +26,9 @@ export class TravelListComponent {
     goGroups() {
         this.router.navigate(["/Travels/Groups"]);
     }
+
+    anyTravelsAvailable() : boolean {
+        return this.travels && this.travels.length > 0;
+    }
 }
 

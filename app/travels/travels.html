@@ -1,28 +1,41 @@
 <div class="row">
-    <div class="col-xs-12 col-lg-12 col-md-12">
-        <div class="jumbotron well">
-            <h1 class="title">Gruppereiser</h1>
-            <p>
-                Vi har valgt å fokusere på gruppereiser, både åpne og private. Det er nok av arrangører som tilbyr
-                charterturer eller andre reiser på egen hånd. Vi ønsker å fokusere på kvalitet og innholdstike reiser.
-            </p>
-            <p>
-                Åpne gruppereiser har et fast kvalitetssikret program,
-                og fastsatte tidsrom. Like perfekt uansett om man reiser alene eller i en gruppe.
-            </p>
-            <p>
-                Private gruppereiser er eksklusivt for de som bestiller. Dere bestemme selv når dere vil reise.
-                Skreddersy en reise sammen med oss som gir opplevelser for livet. Ideelt for store vennegrupper,
-                bedrifter, foreninger og organisasjoner.
-            </p>
-            <p>
-                <button class="btn btn-success btn-lg" (click)="goGroups()" role="button">Les mer om hvorfor gruppereiser er flott</button>
-                <button role="button" class="btn btn-success btn-lg">Kontakt oss for et uforpliktende tilbud</button>
-            </p>
+    <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="important-text">
+                    <h2 class="title">Gruppereiser</h2>
+                    <p>
+                        Vi har valgt å fokusere på gruppereiser, både åpne og private. Det er nok av arrangører som tilbyr
+                        charterturer eller andre reiser på egen hånd. Vi ønsker å fokusere på kvalitet og innholdsrike reiser.
+                    </p>
+                    <p>
+                        Åpne gruppereiser har et fast kvalitetssikret program og fastsatte tidsrom. Like perfekt uansett
+                        om man reiser alene eller i en gruppe.
+                    </p>
+                    <p>
+                        Private gruppereiser er eksklusivt for de som bestiller. Dere bestemme selv når dere vil reise.
+                        Skreddersy en reise sammen med oss som gir opplevelser for livet. Ideelt for store vennegrupper,
+                        bedrifter, foreninger og organisasjoner.
+                    </p>
+                    <p>
+                        <button class="btn btn-success btn-lg" (click)="goGroups()" role="button">Les mer om hvorfor gruppereiser er flott</button>
+                        <button role="button" class="btn btn-success btn-lg">Kontakt oss for et uforpliktende tilbud</button>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 <div class="row">
+    <div *ngIf="!anyTravelsAvailable()" class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body important-text">
+                Det er ingen planlagte åpne gruppereiser på nåværende tidspunkt. Prøv igjen senere.
+            </div>
+        </div>
+    </div>
+
     <div class="col-xs-12 col-lg-4 col-md-6" *ngFor="let travel of travels">
         <section>
             <header>

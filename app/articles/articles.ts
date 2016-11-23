@@ -21,4 +21,8 @@ export class ArticleListComponent {
     onClick(article:Article) {
         this.router.navigate(["/Articles", article.id]);
     }
+
+    anyArticlesAvailable() : boolean {
+        return this.articles && this.articles.length > 0;
+    }
 }
